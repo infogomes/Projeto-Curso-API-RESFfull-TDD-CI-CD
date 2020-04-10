@@ -1,0 +1,11 @@
+dist: trusty
+language: java
+jdk:
+- oraclejdk8
+before_install:
+- export TZ=Brazil/East
+deploy:
+  provider: heroku
+  api_key:
+    secure: gDIOGZiThce7cyuhdkHSXZehYp6t872P2YzXdnDc8Sc9Ah90vcMvwkvwX1VvYUq8AxnA5JEvVhQ4iyoCT4KAbsFL1Xv/J5/V9KPcW7gAE/GDq3OVTAMBEDTl7h52ivHbLPrP6QuWXzO09LYuB0kUSZXnpBgrCxYHJWWqhSRFh9nq0nyUZMXcsy4zu1QzpsWluJWFpQdmYED6f3nM/9TtCVFUFA/Hx+/QHX/3bgAtRUy74ZT26H64yV+DcSqG7nZHAH4EpeSeGK2wSPWznk5Px7MaUdIkEUu04Ect5Z+fMuAi/9PQiAfrAB1onAgf3moVyeT34NdO3V8IAusOBTdiXplpJGGLBPfcDmYv0M/3wy0zup4hLaQIMXjDaNcB6w1x6L1MKyGVK9bXsbnf0P0NIADKASmow2nQ2byp1MEDMoJzomv4x7YN9L0AdVTyJ/AjZASpQoH1MwpHaZQsu/rYshBv7Do3rM6w+tjmAHdCOQGXKFgqEfzNEWmSm62PLbW1lh5zlOB16GlEzb55AEOtuJT5/QC0G64j0OlMJ/2zHspg2u+UEOf9QQK4B+anHNrU2oQI9Y/2TdTNGCFN0KGMLF6ZgUWLsGYwvo0it60S7kgq5o43LZf1Zt0JSNF/+WHnpwpuHhErOF7XUCom0j6hXkQIKR6Yk8lxv6AxRpBRNhA=
+  app: "$APP"
